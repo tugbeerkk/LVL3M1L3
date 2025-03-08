@@ -35,4 +35,8 @@ async def ban_error(ctx, error):
     elif isinstance(error, commands.MemberNotFound):
         await ctx.send("Kullanıcı bulunamadı!")
 
+@bot.command()
+async def naber(ctx):
+    await ctx.send("iyi ama sen umrumda değilsin")
+
 bot.run(token)
